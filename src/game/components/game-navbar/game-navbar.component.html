@@ -1,0 +1,19 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span class="toolbar-title">RBTV Manager<span fxHide fxShow.gt-sm> – Das Fangame</span></span>
+    <span class="fill-remaining-space"></span>
+    <span class="aktuelle-werte">
+      <app-bietcoin [amount]="200000"></app-bietcoin>
+    </span>
+  </mat-toolbar-row>
+  <mat-toolbar-row class="button-row" [ngClass.lt-md]="{'small-flex': true}" [ngClass.gt-sm]="{'small-flex': false}">
+    <app-navbar-button [matIcon]="'chat'" [label]="'Smack'" routerLink="/smack"></app-navbar-button>
+    <app-navbar-button [matIcon]="'account_box'" [label]="'Mitarbeiter'" routerLink="/mitarbeiter"></app-navbar-button>
+    <app-navbar-button [matIcon]="'home'" [label]="'Gebäude'" routerLink="/gebaeude"></app-navbar-button>
+    <app-navbar-button [matIcon]="'subscriptions'" [label]="'Sendungen'" routerLink="/sendungen"></app-navbar-button>
+    <app-navbar-button [matIcon]="'date_range'" [label]="'Sendeplan'" routerLink="/sendeplan"></app-navbar-button>
+    <app-navbar-button [matIcon]="'attach_money'" [label]="'Sponsoren'" routerLink="/sponsoren"></app-navbar-button>
+    <app-navbar-button [matIcon]="'shopping_basket'" [label]="'Merchandise'" routerLink="/merchandise"></app-navbar-button>
+    <app-navbar-button [matIcon]="'show_chart'" [label]="'Statistik'" routerLink="/statistik"></app-navbar-button>
+  </mat-toolbar-row>
+</mat-toolbar>
