@@ -1,0 +1,11 @@
+id,authorId,author,channel,title,content,unique,actionMandatory,spawnCondition
+be61ffbf-4231-4459-9f6b-213aad41230e,,Arno,Wichtig,Bin dann mal weg,"Hallo liebe Bohnen,
+
+wie angekündigt starte ich heute mein mehrjähriges Sabbatical. Ich hoffe, ihr seid zufrieden mit meiner Vertretung. Dieses Ding mit dem eigenen Sender rockt ihr!
+
+Grüße
+Arno",true,false,Never
+502aa5ce-6e9e-4d74-961b-717408be9546,c8d26b08-0488-4b03-9636-a054efeabe0b,Eddy,Kaffeeküche,,Auch von mir ein herzliches Hallo.,true,false,Never
+323f6526-9288-4290-be08-4523fbf54715,b8a2eaf3-088e-40fb-bcb2-a35b3ad50fa6,Nils,Kaffeeküche,,"*@Simon:* Arno hat umgeschult, er ist jetzt Fernwehproduzent.",true,false,Never
+846d61a0-8064-405e-9e90-f6f0dd77b7fc,10f6dbc8-bdb9-492a-8aa8-c34aede9a191,Budi,Kaffeeküche,,"Herzlich Willkommen im Team! Super, dass du dabei bist!",true,false,Never
+8f500468-6564-449f-ad62-8e540c5cc59c,f25a63cc-7749-47a4-b8ff-43a34ef03789,Simon,Kaffeeküche,,"Leute, was hab ich verpasst? Wo ist Arno?",true,false,Never

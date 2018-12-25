@@ -1,4 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+
+import { InitGameService } from '../services/init-game.service';
 
 @Component({
   selector: 'app-game-root',
@@ -6,5 +8,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrls: ['game.component.less'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class GameComponent {
+export class GameComponent implements OnInit {
+  constructor(private initGame: InitGameService) { }
+
+  ngOnInit(): void {
+    this.initGame.forTesting();
+  }
+
 }

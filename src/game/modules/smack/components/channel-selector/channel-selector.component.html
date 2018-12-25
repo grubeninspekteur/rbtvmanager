@@ -1,0 +1,7 @@
+<div *ngFor="let channelName of channelNames">
+  <button mat-stroked-button (click)="selectChannel(channelName)" [color]="(selectedChannel$ | async) === channelName ? 'primary' : undefined"
+    [matBadge]="(unreadPerChannel$ | async).get(channelName)" [matBadgeHidden]="!(unreadPerChannel$ | async).get(channelName)">
+    <span>{{
+      channelName }}</span>
+  </button>
+</div>

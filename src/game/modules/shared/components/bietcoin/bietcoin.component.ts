@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 /**
  * Stellt einen Betrag von Bietcoins dar.
@@ -14,12 +14,6 @@ import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core
   `],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BietcoinComponent implements OnInit {
+export class BietcoinComponent {
   @Input() amount: number;
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }
