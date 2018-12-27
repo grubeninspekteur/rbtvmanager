@@ -1,6 +1,6 @@
 <mat-card *ngFor="let message of messages$ | async">
   <mat-card-header>
-    <div mat-card-avatar class="avatar" [ngStyle]="{'background-image': 'url(\'assets/avatars/smack/unknown.png\')'}"></div>
+    <div mat-card-avatar class="avatar" [ngStyle]="{'background-image': 'url(\'' + message.avatarUrlFull + '\')'}"></div>
     <mat-card-title *ngIf="message.title">{{ message.title }}</mat-card-title>
     <mat-card-subtitle>von {{ message.author }} · {{ message.date | date:'dd.MM.yy HH:mm' }} Uhr</mat-card-subtitle>
   </mat-card-header>

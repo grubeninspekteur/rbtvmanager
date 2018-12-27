@@ -1,5 +1,6 @@
-id,legendaer,typ,name,geschlecht,avatar,spruch,moderation,spontaneitaet,gelassenheit,kreativitaetVis,geschwindigkeit,kreativitaetOrg,connections,gewissenhaftigkeit,verkaeufer,praesentator,zack,gewissenhaftigkeit,eigenschaften,talente
-c8d26b08-0488-4b03-9636-a054efeabe0b,true,Moderator,Eddy,M,eddy.png,Mach dich mal locker!,12,8,3,,,,2,,,,,,OftKrank,Shooter:1W6+4
-b8a2eaf3-088e-40fb-bcb2-a35b3ad50fa6,true,Moderator,Nils,M,nils.png,Nun.,14,17,9,,,,,,,,,,,
-10f6dbc8-bdb9-492a-8aa8-c34aede9a191,true,Moderator Netzwerker,Budi,M,budi.png,Fantastisch!,11,7,14,,,,,,4,12,,,,
-f25a63cc-7749-47a4-b8ff-43a34ef03789,true,Moderator,Simon,M,simon.png,"Ohne Mühe, ohne irgendeinen Skill, ohne Arbeit!",11,9,4,,,,,,,,,,,FMV:2W6 Horror:1W4+2
+id,typen,name,geschlecht,avatar,zitat,moderation,spontaneitaet,gelassenheit,kreativitaetVis,geschwindigkeit,kreativitaetOrg,connections,gewissenhaftigkeit,verkaeufer,praesentator,zack,eigenschaften,talente
+c8d26b08-0488-4b03-9636-a054efeabe0b,Moderator,Eddy,M,eddy.png,Mach dich mal locker!,12,8,3,,,,2,,,,,OftKrank,Shooter:1W6+4
+b8a2eaf3-088e-40fb-bcb2-a35b3ad50fa6,Moderator,Nils,M,nils.png,Nun.,14,17,9,,,,,,,,,,
+10f6dbc8-bdb9-492a-8aa8-c34aede9a191,Netzwerker Moderator,Budi,M,budi.png,Fantastisch!,11,7,14,,,,,,4,12,,,
+f25a63cc-7749-47a4-b8ff-43a34ef03789,Moderator,Simon,M,simon.png,"Ohne Mühe, ohne irgendeinen Skill, ohne Arbeit!",11,9,4,,,,,,,,,,FMV:2W6 Horror:1W4+2
+9ad9171f-9ba4-4acc-a89b-182c27f7e639,Moderator Cutter,Gregor,M,gregor.png,Hände neben die Buzzer.,10,8,12,8,2,,,8,,,,,FMV:1W12 Quiz:1W4+3

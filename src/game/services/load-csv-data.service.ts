@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import * as _ from 'lodash';
 import { parse as parseCsv } from 'papaparse';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -21,7 +22,8 @@ export class LoadCsvDataService {
    * @param converter ein Mapping von Feldern der CSV-Datei auf ein Callback, das eine Konvertierung vornimmt.
    *                  Wenn keine Konvertierung angegeben wurde, wird der Wert als String belassen.
    */
-  public ladeCsv<T>(url: string, converter?: { [key: string]: (value: string) => any }): Observable<T[]> {
+  public ladeCsv<T>(url: string,
+    converter?: { [key in keyof T]?: (value: string) => T[key] }): Observable<T[]> {
     return this.http.get(url, { responseType: 'text' }).pipe(map(data => {
       return parseCsv(data, {
         delimiter: ',',
@@ -42,4 +44,8 @@ export class LoadCsvDataService {
 
 export function toBoolean(value: string): boolean {
   return value === 'true';
+}
+
+export function toNumber(value: string): number | undefined {
+  return (value) ? _.toNumber(value) : undefined;
 }

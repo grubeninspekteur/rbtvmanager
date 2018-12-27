@@ -8,6 +8,8 @@ export interface SmackMessage {
     id: string;
     /** Name des Autors. */
     author: string;
+    /** Id des Autors. */
+    authorId?: string;
     /** Optionale Überschrift. */
     title?: string;
     /** Inhalt der Nachricht. */

@@ -7,10 +7,15 @@ export const selectGlobal = createFeatureSelector<AppState, GlobalGameState>('gl
 
 export const selectGlobalBietcoin = createSelector(
     selectGlobal,
-    (state: GlobalGameState) => state ? state.bietcoin : 0
+    state => state ? state.bietcoin : 0
 );
 
 export const selectGlobalF = createSelector(
     selectGlobal,
-    (state: GlobalGameState) => state ? state.f : 0
+    state => state ? state.f : 0
+);
+
+export const selectAktuelleZeit = createSelector(
+    selectGlobal,
+    state => state.zeit
 );

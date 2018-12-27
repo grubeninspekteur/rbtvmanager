@@ -18,6 +18,7 @@ export class MessageCreatorService {
     return {
       id: this.uuid.generate(),
       author: template.author,
+      authorId: template.authorId,
       title: template.title,
       content: template.content,
       channel: template.channel,

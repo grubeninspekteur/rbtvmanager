@@ -16,6 +16,7 @@ import { NavbarButtonComponent } from './components/game-navbar/navbar-button/na
 import { GameComponent } from './components/game.component';
 import { SmackEffects } from './core/effects/smack.effects';
 import { globalGameStateReducer } from './core/reducer/global-state.reducer';
+import { mitarbeiterReducer } from './core/reducer/mitarbeiter.reducer';
 import { smackReducer } from './core/reducer/smack.reducer';
 import { GameRoutingModule } from './game-routing.module';
 import { SharedModule } from './modules/shared/shared.module';
@@ -38,6 +39,7 @@ import { SharedModule } from './modules/shared/shared.module';
     StoreModule.forRoot({}),
     StoreModule.forFeature('global', globalGameStateReducer),
     StoreModule.forFeature('smack', smackReducer),
+    StoreModule.forFeature('mitarbeiter', mitarbeiterReducer),
     EffectsModule.forRoot([SmackEffects]),
     // Store devtools
     StoreDevtoolsModule.instrument({

@@ -5,11 +5,14 @@ export interface GlobalGameState {
     bietcoin: number;
     /** Das Gegenwärtige Vermögen an F, der Premiumwährung. */
     f: number;
+    /** Die aktuelle Uhrzeit im Spiel. */
+    zeit: Date;
 }
 
 export const initialState: GlobalGameState = {
     bietcoin: 0,
     f: 0,
+    zeit: new Date('2015-01-15T18:00:00Z'),
 };
 
 export function globalGameStateReducer(
